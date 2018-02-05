@@ -36,6 +36,7 @@ GameObject:
   - component: {fileID: 4701505529663682}
   - component: {fileID: 114391545155994978}
   - component: {fileID: 50443504530816300}
+  - component: {fileID: 114830800868156668}
   m_Layer: 0
   m_Name: SpawnPoints
   m_TagString: Untagged
@@ -217,3 +218,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e6866be08ab1134e88b3579ea4b09ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114830800868156668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1240029119586178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e268605d221d84885292bb4ebc0bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteorites:
+  - {fileID: 1523749983872510, guid: a45015acbe604854d8b156ad3d5b1a1b, type: 2}
+  - {fileID: 1213218522655658, guid: 413a7803baa494348ab420294afb894d, type: 2}
+  - {fileID: 1020244147174986, guid: f8e45d6b69a9e0c4893981e2065e56b9, type: 2}
+  spawnPoints:
+  - {fileID: 1499520003794732}
+  - {fileID: 1232326924502368}
+  - {fileID: 1737564981012930}
+  - {fileID: 1415296977350614}
+  - {fileID: 1926940638146974}
