@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 114331678649103888}
   - component: {fileID: 50716609952055896}
   - component: {fileID: 61934957787013112}
+  - component: {fileID: 114024065846095252}
   m_Layer: 0
   m_Name: Meteorite2
-  m_TagString: Untagged
+  m_TagString: meteorites
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +73,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -88,6 +89,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 2.56}
   m_EdgeRadius: 0
+--- !u!114 &114024065846095252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1213218522655658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0602c7fadc640ed4288fb443abac6ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114331678649103888
 MonoBehaviour:
   m_ObjectHideFlags: 1

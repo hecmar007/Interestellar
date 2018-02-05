@@ -19,6 +19,9 @@ public class playerController : MonoBehaviour
 
     void Update()
     {
-        transform.Translate((transform.up * Input.GetAxisRaw("Vertical") + transform.right * Input.GetAxisRaw("Horizontal")).normalized * speed * Time.deltaTime);
+        if(gameController.instance.isAlive)
+        {
+            transform.Translate((transform.up * Input.GetAxisRaw("Vertical") + transform.right * Input.GetAxisRaw("Horizontal")).normalized * speed * Time.deltaTime);
+        }
     }
 }

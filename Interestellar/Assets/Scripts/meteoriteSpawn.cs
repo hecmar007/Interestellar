@@ -38,48 +38,48 @@ public class meteoriteSpawn : MonoBehaviour {
             whereToSpawn = Random.Range(0, spawnPoints.Length);
             circle = meteorites[meteoriteToSpawn].GetComponent<CircleCollider2D>();
 
-            if (!isTaken1 && whereToSpawn == 1)
+            if (!isTaken1 && whereToSpawn == 0)
             {
                 Instantiate(meteorites[meteoriteToSpawn], spawnPoints[whereToSpawn].transform.position, spawnPoints[whereToSpawn].transform.rotation);
                 i++;
             }
-            if (!isTaken2 && whereToSpawn == 2)
+            if (!isTaken2 && whereToSpawn == 1)
             {
                 Instantiate(meteorites[meteoriteToSpawn], spawnPoints[whereToSpawn].transform.position, spawnPoints[whereToSpawn].transform.rotation);
                 i++;
             }
-            if (!isTaken3 && whereToSpawn == 3)
+            if (!isTaken3 && whereToSpawn == 2)
             {
                 Instantiate(meteorites[meteoriteToSpawn], spawnPoints[whereToSpawn].transform.position, spawnPoints[whereToSpawn].transform.rotation);
                 i++;
             }
-            if (!isTaken4 && whereToSpawn == 4)
+            if (!isTaken4 && whereToSpawn == 3)
             {
                 Instantiate(meteorites[meteoriteToSpawn], spawnPoints[whereToSpawn].transform.position, spawnPoints[whereToSpawn].transform.rotation);
                 i++;
             }
-            if (!isTaken5 && whereToSpawn == 5)
+            if (!isTaken5 && whereToSpawn == 4)
             {
                 Instantiate(meteorites[meteoriteToSpawn], spawnPoints[whereToSpawn].transform.position, spawnPoints[whereToSpawn].transform.rotation);
                 i++;
             }
-            if (whereToSpawn == 1)
+            if (whereToSpawn == 0)
             {
                 isTaken1 = true;
             }
-            if (whereToSpawn == 2)
+            if (whereToSpawn == 1)
             {
                 isTaken2 = true;
             }
-            if (whereToSpawn == 3)
+            if (whereToSpawn == 2)
             {
                 isTaken3 = true;
             }
-            if (whereToSpawn == 4)
+            if (whereToSpawn == 3)
             {
                 isTaken4 = true;
             }
-            if (whereToSpawn == 5)
+            if (whereToSpawn == 4)
             {
                 isTaken5 = true;
             }
@@ -111,48 +111,48 @@ public class meteoriteSpawn : MonoBehaviour {
             meteoriteToSpawn = Random.Range(0, meteorites.Length);
             whereToSpawn = Random.Range(0, spawnPoints.Length);
             circle = meteorites[meteoriteToSpawn].GetComponent<CircleCollider2D>();
-            if (!isTaken1 && whereToSpawn == 1)
+            if (!isTaken1 && whereToSpawn == 0)
             {
                 Instantiate(meteorites[meteoriteToSpawn], spawnPoints[whereToSpawn].transform.position, spawnPoints[whereToSpawn].transform.rotation);
                 i++;
             }
-            if (!isTaken2 && whereToSpawn == 2)
+            if (!isTaken2 && whereToSpawn == 1)
             {
                 Instantiate(meteorites[meteoriteToSpawn], spawnPoints[whereToSpawn].transform.position, spawnPoints[whereToSpawn].transform.rotation);
                 i++;
             }
-            if (!isTaken3 && whereToSpawn == 3)
+            if (!isTaken3 && whereToSpawn == 2)
             {
                 Instantiate(meteorites[meteoriteToSpawn], spawnPoints[whereToSpawn].transform.position, spawnPoints[whereToSpawn].transform.rotation);
                 i++;
             }
-            if (!isTaken4 && whereToSpawn == 4)
+            if (!isTaken4 && whereToSpawn == 3)
             {
                 Instantiate(meteorites[meteoriteToSpawn], spawnPoints[whereToSpawn].transform.position, spawnPoints[whereToSpawn].transform.rotation);
                 i++;
             }
-            if (!isTaken5 && whereToSpawn == 5)
+            if (!isTaken5 && whereToSpawn == 4)
             {
                 Instantiate(meteorites[meteoriteToSpawn], spawnPoints[whereToSpawn].transform.position, spawnPoints[whereToSpawn].transform.rotation);
                 i++;
             }
-            if (whereToSpawn == 1)
+            if (whereToSpawn == 0)
             {
                 isTaken1 = true;
             }
-            if (whereToSpawn == 2)
+            if (whereToSpawn == 1)
             {
                 isTaken2 = true;
             }
-            if (whereToSpawn == 3)
+            if (whereToSpawn == 2)
             {
                 isTaken3 = true;
             }
-            if (whereToSpawn == 4)
+            if (whereToSpawn == 3)
             {
                 isTaken4 = true;
             }
-            if (whereToSpawn == 5)
+            if (whereToSpawn == 4)
             {
                 isTaken5 = true;
             }
