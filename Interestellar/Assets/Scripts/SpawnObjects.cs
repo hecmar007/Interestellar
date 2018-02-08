@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class meteoriteSpawn : MonoBehaviour {
+public class SpawnObjects : MonoBehaviour {
 
     #region Variables
 
     public GameObject[] meteorites;
     public GameObject[] spawnPoints;
+    [SerializeField] public GameObject portal;
 
     private int meteoriteToSpawn;
     private int whereToSpawn;
     private int howManyToSpawn;
+    private int portalSpawn;
 
     private bool isTaken1 = false;
     private bool isTaken2 = false;
@@ -20,8 +22,6 @@ public class meteoriteSpawn : MonoBehaviour {
     private bool isTaken5 = false;
 
     public GameObject trigger;
-
-    CircleCollider2D circle;
 
     private int i = 0;
     #endregion
@@ -36,7 +36,6 @@ public class meteoriteSpawn : MonoBehaviour {
         {
             meteoriteToSpawn = Random.Range(0, meteorites.Length);
             whereToSpawn = Random.Range(0, spawnPoints.Length);
-            circle = meteorites[meteoriteToSpawn].GetComponent<CircleCollider2D>();
 
             if (!isTaken1 && whereToSpawn == 0)
             {
@@ -103,14 +102,17 @@ public class meteoriteSpawn : MonoBehaviour {
             i = 0;
         //Resetejar totes les variables
         howManyToSpawn = Random.Range(2, 4);
+        portalSpawn = Random.Range(0, 1);
 
         Instantiate(trigger, spawnPoints[2].transform.position, spawnPoints[2].transform.rotation);
 
+        #region whiletopellarg
+
         while (i <= howManyToSpawn)
         {
+
             meteoriteToSpawn = Random.Range(0, meteorites.Length);
             whereToSpawn = Random.Range(0, spawnPoints.Length);
-            circle = meteorites[meteoriteToSpawn].GetComponent<CircleCollider2D>();
             if (!isTaken1 && whereToSpawn == 0)
             {
                 Instantiate(meteorites[meteoriteToSpawn], spawnPoints[whereToSpawn].transform.position, spawnPoints[whereToSpawn].transform.rotation);
@@ -156,6 +158,28 @@ public class meteoriteSpawn : MonoBehaviour {
             {
                 isTaken5 = true;
             }
+        }
+        #endregion
+
+        if(portalSpawn == 0 && !isTaken1)
+        {
+            Instantiate(portal, spawnPoints[0].transform.position, spawnPoints[0].transform.rotation);
+        }
+         else if (portalSpawn == 0 && !isTaken2)
+        {
+            Instantiate(portal, spawnPoints[1].transform.position, spawnPoints[1].transform.rotation);
+        }
+        else if (portalSpawn == 0 && !isTaken3)
+        {
+            Instantiate(portal, spawnPoints[2].transform.position, spawnPoints[2].transform.rotation);
+        }
+        else if (portalSpawn == 0 && !isTaken4)
+        {
+            Instantiate(portal, spawnPoints[3].transform.position, spawnPoints[3].transform.rotation);
+        }
+        else if (portalSpawn == 0 && !isTaken5)
+        {
+            Instantiate(portal, spawnPoints[4].transform.position, spawnPoints[4].transform.rotation);
         }
     }
 }

@@ -6,7 +6,7 @@ public class meteoritePull : MonoBehaviour {
 
     #region Variables
 
-    public meteoriteSpawn meteoriteScript;
+    public SpawnObjects meteoriteScript;
 
 	#endregion
 

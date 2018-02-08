@@ -12,7 +12,8 @@ public class gameController : MonoBehaviour {
 
     public float seconds = 7.5f;
 
-    private int score;
+    [HideInInspector] public int score = 0;
+    [HideInInspector] public int scoreToAdd = 0;
     private float Timer;
     public Text text;
 
@@ -49,7 +50,9 @@ public class gameController : MonoBehaviour {
         {
             Timer += Time.deltaTime;
             score = Mathf.RoundToInt(Timer);
+            score += scoreToAdd;
             text.text = "Score: " + score;
+   
         }
         else
         {

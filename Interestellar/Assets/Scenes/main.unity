@@ -113,6 +113,34 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &65126324 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1240029119586178, guid: c83a47cb17b1b364e99f6c8b4d6e9ab5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1244876738}
+--- !u!114 &65126325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 65126324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e268605d221d84885292bb4ebc0bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteorites:
+  - {fileID: 1523749983872510, guid: a45015acbe604854d8b156ad3d5b1a1b, type: 2}
+  - {fileID: 1213218522655658, guid: 413a7803baa494348ab420294afb894d, type: 2}
+  - {fileID: 1020244147174986, guid: f8e45d6b69a9e0c4893981e2065e56b9, type: 2}
+  spawnPoints:
+  - {fileID: 1220415077}
+  - {fileID: 731152756}
+  - {fileID: 2020154762}
+  - {fileID: 687081993}
+  - {fileID: 1104434096}
+  portal: {fileID: 1428190730653470, guid: 3e8e4058afca33046b84c38897b0610f, type: 2}
+  trigger: {fileID: 1620458067308450, guid: 1915674f3974d014b90070ce43c7a440, type: 2}
 --- !u!1 &67204308
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,6 +220,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollSpeed: -1.5
   seconds: 7.5
+  score: 0
+  scoreToAdd: 0
   text: {fileID: 918961498}
   gameOverText: {fileID: 916875712}
   gameOverSubText: {fileID: 1082363897}
@@ -892,7 +922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f54672c219ad74c9b9091fde59490d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meteoriteScript: {fileID: 1266266505}
+  meteoriteScript: {fileID: 65126325}
 --- !u!61 &950648630
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1115,14 +1145,9 @@ Prefab:
         type: 2}
     m_RemovedComponents:
     - {fileID: 114391545155994978, guid: c83a47cb17b1b364e99f6c8b4d6e9ab5, type: 2}
+    - {fileID: 114830800868156668, guid: c83a47cb17b1b364e99f6c8b4d6e9ab5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c83a47cb17b1b364e99f6c8b4d6e9ab5, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1266266505 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114830800868156668, guid: c83a47cb17b1b364e99f6c8b4d6e9ab5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1244876738}
-  m_Script: {fileID: 11500000, guid: b9e268605d221d84885292bb4ebc0bb9, type: 3}
 --- !u!1 &1418129752
 GameObject:
   m_ObjectHideFlags: 0
